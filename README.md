@@ -1,4 +1,4 @@
-🥗 Food Image Classification using TensorFlow and OpenCV
+🥗** Food Image Classification using TensorFlow and OpenCV**
 📘 Project Overview
 
 This project aims to classify different food categories using Image Processing and Deep Learning techniques.
