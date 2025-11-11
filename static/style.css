@@ -1,0 +1,105 @@
+/* 🌈 Gradient background + font setup */
+body {
+    background: linear-gradient(135deg, #fff4e6, #ffe0cc);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* 🍽️ Container styling */
+.container {
+    margin-top: 80px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    padding: 50px 60px;
+    animation: fadeIn 1.2s ease;
+}
+
+/* ✨ Header */
+h1 {
+    font-size: 2.5em;
+    color: #ff7043;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+h1::before {
+    content: "🍴";
+}
+
+/* 📁 File input styling */
+input[type="file"] {
+    background-color: #fff;
+    border: 2px dashed #ffa270;
+    padding: 10px;
+    border-radius: 10px;
+    width: 250px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+input[type="file"]:hover {
+    border-color: #ff7043;
+}
+
+/* 🔘 Predict button */
+button {
+    background-color: #ff7043;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 8px rgba(255, 112, 67, 0.3);
+}
+button:hover {
+    background-color: #ff5722;
+    transform: scale(1.05);
+}
+
+/* 🖼️ Result section */
+.result {
+    margin-top: 40px;
+    animation: fadeIn 1s ease;
+}
+
+.result img {
+    margin-top: 15px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease;
+}
+.result img:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    color: #333;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* 🌟 Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 📱 Responsive layout */
+@media (max-width: 600px) {
+    .container {
+        padding: 30px 20px;
+        width: 85%;
+    }
+    h1 {
+        font-size: 2em;
+    }
+}

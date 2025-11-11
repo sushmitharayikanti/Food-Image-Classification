@@ -1,0 +1,32 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# Data and model files
+dataset/
+data/
+*.h5
+*.pkl
+*.pb
+*.npz
+*.npy
+
+# Virtual environment
+venv/
+.env/
+.venv/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE / editor settings
+.vscode/
+.idea/
+
+# Logs and outputs
+logs/
+outputs/
+checkpoints/
